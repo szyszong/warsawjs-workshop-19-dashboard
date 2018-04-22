@@ -1,0 +1,42 @@
+body {
+    background: #f6f6f6;
+    font-family: Roboto;
+}
+.tile {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 340px;
+    background: #ffff;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px darkgrey solid;
+    font-size: 14px;
+    margin: 20px;
+}
+.tile h4 {
+    /*mogę dodawać po przecinkach wiele "elementów - jeśłi style będą takie same"*/
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.tile-img {
+    display: block;
+    width: 200px;
+}
+.container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1350px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0px;
+
+}
