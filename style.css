@@ -2,6 +2,15 @@ body {
     background: #f6f6f6;
     font-family: Roboto;
 }
+.header {
+    background: lightgrey;
+    height: 40px;
+    padding-left: 150px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    /*poprawnie - użyj flex box*/
+}
 .tile {
     display: flex;
     flex-direction: column;
@@ -18,7 +27,7 @@ body {
     margin: 20px;
 }
 .tile h4 {
-    /*mogę dodawać po przecinkach wiele "elementów - jeśłi style będą takie same"*/
+    /*mogę dodawać po przecinkach wiele "elementów - jeśli style będą takie same"*/
     font-size: 22px;
     font-weight: 700;
     margin-top: 10px;
@@ -27,16 +36,42 @@ body {
     display: block;
     width: 200px;
 }
-.container {
+.main {
+    display: flex;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+}
+.content {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     max-width: 1350px;
+    overflow: auto;
 }
 .nav {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    padding-left: 0px;
-
+    width: 150px;
+}
+.aside {
+    background: whitesmoke;
+    border-right: 1px solid darkblue;
+}
+.nav li, .nav li a {
+    padding: 8px 5px;
+    display: block;
+    overflow: auto;
+}
+.nav li:hover{
+        background: grey;
+}
+.totop {
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    font-size: 14px;
+}
+.toggle {
+    display: none;
 }
